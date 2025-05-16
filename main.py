@@ -24,7 +24,7 @@ movies = [
     }
 ]
 
-@app.get("/")
+@app.get("/", tags=["Home"])
 def user_welcome():
     return HTMLResponse("<h1>Welcome</h1>")
 
